@@ -1,0 +1,376 @@
+Godot Engine v3.2.3.stable.mono.official - https://godotengine.org
+OpenGL ES 3.0 Renderer: Intel(R) HD Graphics 4000
+ 
+Mono: Log file is: 'C:\Users\monsi\AppData\Roaming/Godot/mono/mono_logs/2021_01_21 16.56.25 (2996).txt'
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/playerCharacter.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/sidewaysColliders.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/CameraFollow.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/areaEnteredScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/LevelCompleteUI.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/HUDPlayer.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/gameplayColliders.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/coinScript.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Cannot instance script because the project assembly is not loaded. Script: 'res://scripts/ScoreSystem.cs'.
+   At: modules/mono/csharp_script.cpp:2939:can_instance() - Method failed. Returning: __null
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(gameplayColliders.cs)::finishLineEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(gameplayColliders.cs)::finishLineEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(gameplayColliders.cs)::speed2Entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(gameplayColliders.cs)::speed2Entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(gameplayColliders.cs)::speed1Entered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(gameplayColliders.cs)::speed1Entered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(areaEnteredScript.cs)::areaEntered': Method not found..
+**ERROR**: Error calling method from signal 'body_entered': 'Spatial(sidewaysColliders.cs)::areaEntered': Method not found..
+   At: core/object.cpp:1260:emit_signal() - Error calling method from signal 'body_entered': 'Spatial(sidewaysColliders.cs)::areaEntered': Method not found..

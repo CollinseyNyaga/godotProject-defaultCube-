@@ -1,0 +1,305 @@
+=============================================1. Adding the gravity in Godot =========================================
+    -   to add the gravity in godot to the player character [KinematicBody] , i used the moveandslide() method to slide the 
+        character downwards along the y axis.
+
+        ////// code:
+        public class playerCharacter : KinematicBody
+        {
+          
+            [Export] int gravity = 100; 
+            Vector3 GravityVelocity;                       
+
+
+            // Called when the node enters the scene tree for the first time.
+            public override void _Ready()
+            {
+                // initialize the force of gravity on the y axis
+                GravityVelocity.y = -gravity;       // negative is to apply the gravity downwards and not upwards
+            }
+
+            //  // Called every frame. 'delta' is the elapsed time since the previous frame.
+            public override void _Process(float delta)
+            {
+
+            }
+
+            // the method is run 60 times per second 
+            public override void _PhysicsProcess(float delta)
+            {
+                MoveAndSlide(GravityVelocity);  // this method takes a Vector3 as a parameter 
+                System.Console.WriteLine(GlobalTransform);   // prints out the global transform of the kinematic body
+            }
+
+        }
+
+
+=============================================2. Adding forward movement in the character =============================
+    -   i used the move and slide method to move the character continously along the z axis.
+    -   the MoveForward( ) method is called in the _PhysicsProcess function 
+            
+
+            Vector3 ForwardVelocity;    // this is the argument for the forward moveandslide method only
+            [Export] int speed = 20;    // this is the speed of the kinematic body
+
+
+            public void MoveForward()   // this method is used to move the kinematic body along the z axis forwards
+            {
+                ForwardVelocity.z = -speed;
+                MoveAndSlide(ForwardVelocity);  // this method makes the cube to move on the z axis without stopping 
+            }
+
+
+
+
+===========================================3. Adding character controls to the character ==============================
+    -   i added two input maps to the input map in the Project > Project Settings > InputMap of godot . 
+    -   the controls are two : moving right - "slideRight"
+                               moving left - "slideLeft"
+
+                        -when user presses w or left arrow key , the slideLeft input event occurs 
+                        -when user presses d or right arrow key, the slideRight input event occurs
+                        we should then move the playerCharacter in the direction of the keypress (right or left using code)
+
+    code: //
+
+
+            Vector3 sideWaysVelocity = new Vector3(0, 0, 0);    // this is the velocity that is added to the right or left direction in the move and slide method
+
+
+            public void PlayerInput()   // this is the method and it is called in the _PhysicsProcess method at 60fps
+            {
+                sideWaysVelocity.x = 35;  //sets the velocity of the sideways movement to 35
+
+
+                if (Input.IsActionPressed("slideLeft"))
+                {
+                    sideWaysVelocity.x = -sideWaysVelocity.x;   // the negative direction of the x axis (horizontal left)
+                    MoveAndSlide(sideWaysVelocity);
+                }
+                if (Input.IsActionPressed("slideRight"))
+                {
+                    MoveAndSlide(sideWaysVelocity);     // slide in the x axis 35 speed
+                }
+            } // end of the method 
+
+
+
+=================================================== 4. The camera follow script =======================================
+    - this is the script that allows the camera to follow the player character
+    - note : the player scene instance of the level scene has a child node of type spatial called CameraFollow .the 
+    spatial node is used to act a position which a camera will follow and apply its transform to . 
+    
+
+    code: //
+
+        public class CameraFollow: camera
+        {
+            Spatial camfollow;  //creates new variable of type spatial
+
+            public override void _Ready()
+            {
+                camfollow = GetParent().GetNode<Spatial>("CameraFollow");   // gets the node using the parent
+            }
+            public override void _PhysicsProcess(float delta)
+            {
+                this.GlobalTransform = camfollow.GlobalTransform;   // sets the position of the camera to the position of the camfollow node
+            }
+        }
+
+
+
+============================== 5. How i added collisions in the level [to allow failing of the level]====================
+
+    -   i used the area node of the enemy scene to detect collisions of any node type.
+    -   i added a signal automatically in the inspector right. The signal is body_entered(Node body) - this is a signal that takes a node as a parameter, and 
+            when the signal is emitted , it takes the body that has collided with it and passes it as an argument of the method
+    -   when the signal is emmitted , the method executed is attached in the collisionScript spatial node .
+
+                public void areaEntered(Node body)  // method is called when the signal is emitted
+                {
+                    if (body.Name=="player")    // the name of the body which has collided 
+                    {
+                        GD.Print("collided");   // executed when the name is player after collision
+                    }
+                }
+    
+    -   when a collision occurs, i want to load a new scene that will display that youve failed the level.
+
+        ========= Loading a level failed scene after collision ==========================
+    -   to do this, i used SceneTree.changescene("res://Assets/sceneAssets/GameOverUI.tscn") method which loads a scene after packing it to a type called Packed Scene.
+
+    -   to get the current scenetree, use gettree(). it returns a SceneTree object.
+
+        code: //
+
+            public void areaEntered(Node body)
+            {
+                if (body.Name=="player")   // if the name of the node collided is player only
+                {
+                    GD.Print("collided");  
+                    GetTree().ChangeScene("res://Assets/sceneAssets/GameOverUI.tscn");  // get the tree and change the scene to the specified one 
+                }
+            }  
+
+            // this code allows the scenetree to open a new scene when the player collides with the enemy.
+
+
+        ==================how i added the colliders at the sides of the floor ====================
+    -   these colliders are helpful such that they prevent the player from going ofcourse. If player goes offcourse, they fail.
+    -   i added a spatial node as child of the floor node and two area nodes on the left and right to detect collisions when the player
+        decided to go left and right 
+    
+    -   the two areas have a signal (body_entered(Node ) )which when emitted calls a method of a script attached to the spatial node parent 
+        of the two areas.
+
+            public void areaEntered(Node body)  body parameter value of type Node
+            {
+                if (body.Name=="player")   // if the name of the node collided is player only
+                {
+                    GD.Print("collided");  
+                    GetTree().ChangeScene("res://Assets/sceneAssets/GameOverUI.tscn");  // get the tree and change the scene to the specified one 
+                }
+            }  
+
+
+
+
+
+================================================ 6. The level failed scene ===========================================
+        this scene is used to prompt the user to retry the level.
+        its root node is a control node.
+        the retry button of the scene is used to load the level1 scene. it has a signal called pressed () [has no parameter] 
+            the signal is emitted when the button is clicked. the signal calls the method found in the script of a specified node in the scene
+
+        code : /// loading the level1 scene :
+
+            public void onRetryPressed()
+            {
+                GetTree().ChangeScene("res://scenes/level1.tscn"); 
+                // get the scene tree and changes the scene to level1 scene.
+            }
+
+
+=================================7. Increasing the speed of the player at stages in the level===========================
+        -   to increase the speed of the kinematic body of the player character, i used areas to do that. Once the player enters
+            an area which is placed at a certain location in the scene, the signal is emitted and it changes the value of speed variable
+            in the player script 
+
+        -   the player scene instance of the level scene will allow us to access the property we created called speed and 
+            change the value of speed.
+        -   to get the player scene instance, we get the parent first and then the node we want:
+                var player = GetParent().GetNode("player");     // get the parent of the current node and get a node of the name player and store it in a var player.
+        -   to set the property of speed found in the player scene root node, we use a method called set() , from the Object class of godot
+                player.Set(property: "speed", value: 40);       // the key: value pair syntax
+
+        final code // : this method is executed when the signal body_entered() method is emitted.
+
+            public void speed1Entered(Node body)
+            {
+                if (body.Name == "player")                          // if the name of the collided body is equal to player .
+                {
+                    var player = GetParent().GetNode("player");     // get the parent of the current node and get a node of the name player and store it in a var player.
+                    player.Set(property: "speed", value: 40);       // this line here sets the speed of the player node to a certain value. [using the key:value pair syntax]
+                }
+            }
+                
+
+
+
+==================================================8. The level complete user interface ================================
+        -   at the end of the obstacles, there is an area which will be used to emit a signal once the user enters it and 
+            make the scene of the levelCompleteUI visible.
+        -   levelCompleteUI is a scene that is instanced to the level scene. 
+
+
+            public void finishLineEntered(Node body)    // method is called only when the player enters the area which emits the signal
+            {
+                if (body.Name == "player")  // if the name of node is player
+                {
+                    var levelCompleteUI = GetParent().GetNode("UserInterface").GetNode("LevelComplete");     // get the parent of the current node and get a node of the name player and store it in a var player.
+                    levelCompleteUI.Call(method:"showTheUI");      // this line here calls a method of the node and it gets executed [using the Object.Call() method]
+                }
+            }
+         
+
+
+
+
+
+
+
+========================================= 7. Adding lighting and fog to the scene=======================================
+    -   i added a spatial node that will hold the world environment node and directional light which contributes to the lighting of the scene.
+    -   i loaded a new environment resource file to the environment node and edited it to have both procedural sky and color 
+        the results were wonderful.
+    
+    -   i placed the directional light at the center of the scene.
+
+
+    --How i placed fog to my scene environment - i placed fog to the scene using the environment resource file . 
+        - on the properties tab of the environment resource file, go to the fog section and play around with it 
+
+
+
+
+===================================================8 . adding collectables to the scene ===============================
+    -   i added collectables to the scene using this technique:
+        when a player enters an area node, the collision is detected and the coin scene instance is freed from the scene.
+        you remove a coin from scene to  make it disappear.
+    
+    -   i created a spatial node in the scene that holds all the coin scene instance.
+    -   the coin scene is instanced as many times to the scene. The area node of the coin scen has a signal called body_entered(Node body)
+        the signal is emitted whenever the player enters the area.
+    
+
+            public void coinEntered(Node body)   // when the coin is entered.
+            {
+                if (body.Name == "player")  // if only the name of the collided object is player.
+                {
+                    this.QueueFree();   // this method removes the node from the scene.
+                }
+            }
+
+    -------rotation of the coin in the game
+        -   the rotation of the coin in the game is really cool 
+            to do this , the coin was rotated at 0.08 deg per frame in the _PhysicsProcess method of the coinScript
+        
+            public override void _PhysicsProcess(float delta)
+            {
+                coinRotate();   // calls the coinRotate() method
+            }    
+            
+            public void coinRotate()
+            {
+                this.RotateY((float)0.08);  // this method rotates the coin in the Y axis
+            }
+
+    
+
+    ===========================================9. the score label at the top ======================================
+    -   i created a scene that will be instanced to the level1 scene and it will be used as the hud that displayed the score of the player]
+    -   the scene consists of : 
+                                -> control node 
+                                    > center container 
+                                        > label 
+
+        the scene is instanced to the main level scene.
+    -   every frame, the value of the text property of the label is changed to a value of a property of a node in the level scene 
+        the node is called scoreSystem. It has a script attached to it and having a property called score.
+    
+    -   whenever a player collects the coin , a method found in the scoreSystem class is executed 
+    -   coin collection happens when the area of the coin is entered
+
+
+    ==========================================10. the sound on the scene level1 =====================================
+    -   i added a spatial node that will hold the audio nodes for the scene.
+    -   i added an audioStreamplayer node as child to play music in the background when the game is being played.
+        i set autoplay property to true in the editor. It can also be set through code. 
+        the sound was in ogg format. 
+    
+
+                                        
+
+
+
+

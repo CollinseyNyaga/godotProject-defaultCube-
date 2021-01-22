@@ -1,0 +1,117 @@
+// this file is a guideline of the godot project structure and arrangements of the nodes.
+
+============================================STEP 0. PLANNING THE GAME ========================================
+
+
+	================================================ABOUT THE GAME ================================================
+	Title :
+
+	Description : a cube player game. dodge the obstacles to the finish line if you can . Try not to laugh
+
+	Player : the player is a cube 
+
+	enemy :  the environment and the obstacles
+
+	Mechanics : control the character from the left to right to dodge obstacles and shoot them.
+
+	terrain : the terrain will be broken down to parts to allow the 3d modellers to find it easy to create unique 
+		  unrepetitive terrain parts 
+	
+
+
+
+==============step 1. =======================CREATING THE PROTOTYPE=============================================
+
+	------------- Project structure : --------------
+		
+	-> res://
+		> scenes 					// will store all of our scenes
+
+			> player Scene    			// this is the scene that has the player character and is instanced to the level scenes
+			> Level1 Scene				// this scene is the first level scene. it has an instance of the player scene . level1 is simple to the player.
+			> Level2 Scene				// this scene is the second level scene and it has guns and funny looking enemies
+			> Enemy Scene				// this scene has the enemy model and is instanced into the level scene as many times
+			> level Failed Scene		// this scene is used to display the failed message , when the user collides with the enemy.
+
+
+		> scripts					// will store all of our scripts
+		> Assets					// will store imported models and materials
+		> default_env.tres				// is the default skybox environment resource
+		> Icon.png 					// is the icon of the game itself
+		
+
+	-------------scene structure --------------------
+	
+	1. player scene - 
+		this scene has the player character.
+		root node : KinematicBody [a kinematic body is useful in godot such that is used to control characters and is not affected by physics like rigidbody]
+		
+		-> Kinematic Body - to be controlled by the player(real life) using the moveandslide() method.
+
+			> CollisionShape [cube] - to collide with the obstacles and the floor of the levels
+ 
+			> MeshInstance [cube] - to be seen by the player since it has a material.
+
+
+	2. Level1 scene - this is the first level of the game
+			root node :  spatial node 
+
+		-> Spatial 				
+			> Player Scene [instance] - is the player character that is instanced to the level scene
+
+			> Camera - to view the world at a perspective 
+
+			> Floor [Spatial]
+				> Static Body - used as a physics object that has collisions but does not move 
+					> CollisionShape - to collide with the other scene objects
+					> MeshInstance - to display the mesh of the object 
+
+			> Enemies [spatial] - groups the enemy scene instances together 
+				> Enemy1 [Enemy scene instance]
+				> Enemy2 [Enemy scene instance]
+				> Enemy3 [Enemy scene instance] 
+
+			> Lighting [spatial] - used to group the skybox environment and the lights
+				> WorldEnvironment node - to load the environment resource file
+				> Directional light - to light up the scene
+
+			> UserInterface [spatial] - this node organizes all of the ui related instanced scenes
+				> levelCompleteUI [instance scene] - is the ui of the LevelComplete scene.
+				> Playerhud	[instance scene] - is the hud that displays the score in the game.
+	
+
+
+
+
+
+	3. Enemy scene - 
+		the scene has the enemy and is instanced to level scene. 
+		the root node is area node . An area node is used as it has signals that are used in detecting Collisions. When the player collides into the area , the game over scene will be loaded
+
+		-> Area 
+			> CollisionShape - to collide with the world objects
+			> MeshInstance [the mesh is imported as a gltf format]
+			> scriptsHolder[Spatial] - i used this node to hold the scripts
+				> collisionScript[Spatial] - i attached a script in the node to handle collisions
+
+
+
+	4. LevelFailed scene
+		displays that youve failed the scene and allows you to play another round
+
+		-> control node	
+			> colorrect node - is used as a background to display the colored rectangle
+			> Label - used to display the level failed message
+			> Retry button - used to Reload the level scene.
+			
+
+	5. coin scene -
+		this scene has a coin such cylinder that represents a coin and is collected by the user
+
+		-> Spatial node	- this root node holds the script that has a method that is executed when the area node emits the signal
+			> Area - has a signal that is emitted when the player enters the coin body
+				> CollisionShape - to collide with the player`
+			> MeshInstance - it is used to display the coin and give it a material
+
+
+

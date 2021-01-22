@@ -1,0 +1,97 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/images/1 bP7lbvunyuyhPbyjdKCUwA.png" type="Texture" id=1]
+[ext_resource path="res://Assets/fonts/Roboto-Black.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/images/buttons/quitnormal.png" type="Texture" id=3]
+[ext_resource path="res://Assets/images/buttons/startnormal.png" type="Texture" id=4]
+[ext_resource path="res://Assets/images/buttons/starthover.png" type="Texture" id=5]
+[ext_resource path="res://Assets/images/buttons/quithover.png" type="Texture" id=6]
+[ext_resource path="res://scripts/MainMenu.cs" type="Script" id=7]
+[ext_resource path="res://Assets/audio/y2mate.com - Tristan Lohengrin Happy 8bit Loop 01 NO COPYRIGHT 8bit Music.ogg" type="AudioStream" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VSeparator" type="VSeparator" parent="ColorRect"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 552.039
+margin_top = 160.704
+margin_right = 556.039
+margin_bottom = 495.704
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="menuButtons" type="VBoxContainer" parent="ColorRect"]
+margin_left = 578.0
+margin_top = 133.0
+margin_right = 777.0
+margin_bottom = 427.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="startButton" type="TextureButton" parent="ColorRect/menuButtons"]
+margin_right = 415.0
+margin_bottom = 138.0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+
+[node name="quitButton" type="TextureButton" parent="ColorRect/menuButtons"]
+margin_top = 142.0
+margin_right = 415.0
+margin_bottom = 280.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 6 )
+
+[node name="1 bP7lbvunyuyhPbyjdKCUwA" type="Sprite" parent="ColorRect"]
+position = Vector2( 312.068, 328.202 )
+scale = Vector2( 0.73409, 0.73409 )
+texture = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="ColorRect"]
+margin_left = 146.797
+margin_top = 29.3439
+margin_right = 616.797
+margin_bottom = 100.344
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "default cube"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="audio" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="scenemusic" type="AudioStreamPlayer" parent="audio"]
+stream = ExtResource( 8 )
+volume_db = -11.794
+pitch_scale = 1.2
+autoplay = true
+[connection signal="pressed" from="ColorRect/menuButtons/startButton" to="." method="onStartBtnPressed"]
+[connection signal="pressed" from="ColorRect/menuButtons/quitButton" to="." method="onQuitBtnPressed"]

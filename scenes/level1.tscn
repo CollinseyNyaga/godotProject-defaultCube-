@@ -1,0 +1,419 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://scenes/playerCharacterScene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/CameraFollow.cs" type="Script" id=2]
+[ext_resource path="res://Assets/sceneAssets/enemy1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/sceneAssets/coin.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scripts/sidewaysColliders.cs" type="Script" id=5]
+[ext_resource path="res://Assets/sceneAssets/LevelCompleteUI.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scripts/gameplayColliders.cs" type="Script" id=7]
+[ext_resource path="res://new_environment.tres" type="Environment" id=8]
+[ext_resource path="res://Assets/sceneAssets/HUDPlayer.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scripts/ScoreSystem.cs" type="Script" id=10]
+[ext_resource path="res://Assets/audio/y2mate.com - Krayzius Brainstorm Virtual Boy NO COPYRIGHT 8bit Music.ogg" type="AudioStream" id=11]
+
+[sub_resource type="BoxShape" id=1]
+
+[sub_resource type="CubeMesh" id=2]
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.654902, 0.654902, 0.627451, 1 )
+
+[sub_resource type="BoxShape" id=4]
+
+[sub_resource type="BoxShape" id=5]
+
+[node name="level1" type="Spatial"]
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1.99928, -0.0537497, 0, 0.0537497, 1.99928, 0, 0, 0, 2, 0.346, 3, 38.52 )
+
+[node name="camerafollow" type="Spatial" parent="player"]
+transform = Transform( 0.5, 1.86265e-09, 7.27596e-12, 0, 0.499986, -0.00370879, 0, 0.00370879, 0.499986, 0.00696141, 1.37345, 5.51159 )
+
+[node name="floor" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, -50.9829 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="floor1" type="StaticBody" parent="floor"]
+transform = Transform( 20, 0, 0, 0, 1, 0, 0, 0, 300, 0, 0, -266.335 )
+
+[node name="CollisionShape" type="CollisionShape" parent="floor/floor1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0347397, 0, -0.00125223 )
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="floor/floor1"]
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
+
+[node name="sidewaysColliders" type="Spatial" parent="floor"]
+script = ExtResource( 5 )
+
+[node name="leftArea" type="Area" parent="floor/sidewaysColliders"]
+transform = Transform( 0.939693, -6.8404, 0, 0.34202, 18.7939, 0, 0, 0, 300, -25.4093, 10, -266.064 )
+
+[node name="CollisionShape" type="CollisionShape" parent="floor/sidewaysColliders/leftArea"]
+shape = SubResource( 4 )
+
+[node name="Area2" type="Area" parent="floor/sidewaysColliders"]
+transform = Transform( 0.939693, 6.8404, 0, -0.34202, 18.7939, 0, 0, 0, 300, 25.2531, 9.60666, -266.064 )
+
+[node name="CollisionShape" type="CollisionShape" parent="floor/sidewaysColliders/Area2"]
+shape = SubResource( 4 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.999639, -0.0268741, 0.000199346, 0.0268748, 0.999611, -0.00741491, 0, 0.00741759, 0.999973, 0.286098, 8.31745, 46.548 )
+far = 250.0
+script = ExtResource( 2 )
+
+[node name="obstacles" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -86.1534 )
+
+[node name="enemy1" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -16.802, 2, 20.7245 )
+
+[node name="enemy2" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -10.7734, 2, 13.6379 )
+
+[node name="enemy3" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -5.02515, 2, 8.31027 )
+
+[node name="enemy4" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 0.723078, 2, 2.35823 )
+
+[node name="enemy5" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 1.18871, 2, -46.9401 )
+
+[node name="enemy6" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 4.73132, 2, -41.5967 )
+
+[node name="enemy7" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 10.4796, 2, -34.4943 )
+
+[node name="enemy8" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 16.2278, 2, -27.5191 )
+
+[node name="enemy9" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -1.60801, 0, 1.91424, 0, 2.5, 0, -1.91424, 0, -1.60801, -15.5594, 2, -86.2089 )
+
+[node name="enemy10" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -1.60801, 0, 1.91424, 0, 2.5, 0, -1.91424, 0, -1.60801, -9.20097, 2, -91.5501 )
+
+[node name="enemy11" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -1.60801, 0, 1.91424, 0, 2.5, 0, -1.91424, 0, -1.60801, -2.44518, 2, -97.2251 )
+
+[node name="enemy12" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 16.7558, 2, -304.389 )
+
+[node name="enemy13" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 10.4642, 2, -310.546 )
+
+[node name="enemy14" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -5.88881, 2, -347.39 )
+
+[node name="enemy15" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 3.11119, 2, -347.39 )
+
+[node name="enemy16" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -14.8888, 2, -361.374 )
+
+[node name="enemy17" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 7.81513, 2, -386.515 )
+
+[node name="enemy20" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -15.0853, 2, -445.958 )
+
+[node name="enemy21" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 0.629366, 2, -428.962 )
+
+[node name="enemy22" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 14.5168, 2, -452.164 )
+
+[node name="enemy23" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 1.05565, 2, -456.243 )
+
+[node name="enemy24" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 7.44966, 2, -472.867 )
+
+[node name="enemy25" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -3.4342, 2, -506.286 )
+
+[node name="enemy27" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 2.47547, 2, -525.358 )
+
+[node name="enemy28" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -10.5068, 2, -551.671 )
+
+[node name="enemy29" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 10.3756, 2, -573.548 )
+
+[node name="enemy30" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -11.004, 2, -585.481 )
+
+[node name="enemy31" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 11.37, 2, -607.855 )
+
+[node name="enemy32" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -4.5404, 2, -620.285 )
+
+[node name="enemy33" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 2.91763, 2, -648.128 )
+
+[node name="enemy26" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -14.7163, 2, -492.049 )
+
+[node name="enemy18" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 16.4497, 2, -397.844 )
+
+[node name="enemy19" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -1.55034, 2, -396.844 )
+
+[node name="enemy34" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 16.7558, 2, -643.503 )
+
+[node name="enemy35" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 10.4642, 2, -649.66 )
+
+[node name="enemy36" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -5.88881, 2, -686.504 )
+
+[node name="enemy37" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 3.11119, 2, -686.504 )
+
+[node name="enemy38" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -14.8888, 2, -700.488 )
+
+[node name="enemy39" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 7.81513, 2, -725.629 )
+
+[node name="enemy40" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -15.0853, 2, -785.072 )
+
+[node name="enemy41" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 0.629366, 2, -768.076 )
+
+[node name="enemy42" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 14.5168, 2, -791.278 )
+
+[node name="enemy43" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 1.05565, 2, -795.357 )
+
+[node name="enemy44" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 7.44966, 2, -811.981 )
+
+[node name="enemy45" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -3.4342, 2, -845.4 )
+
+[node name="enemy46" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 2.47547, 2, -864.472 )
+
+[node name="enemy47" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -10.5068, 2, -890.785 )
+
+[node name="enemy48" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 10.3756, 2, -912.662 )
+
+[node name="enemy49" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -11.004, 2, -924.595 )
+
+[node name="enemy50" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 11.37, 2, -946.969 )
+
+[node name="enemy51" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -4.5404, 2, -959.399 )
+
+[node name="enemy52" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 2.91763, 2, -987.242 )
+
+[node name="enemy53" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -14.7163, 2, -831.163 )
+
+[node name="enemy54" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 16.4497, 2, -736.958 )
+
+[node name="enemy55" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -1.55034, 2, -735.958 )
+
+[node name="enemy56" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 2.91763, 2, -1193.37 )
+
+[node name="enemy57" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 16.7558, 2, -1188.75 )
+
+[node name="enemy58" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 10.4642, 2, -1194.91 )
+
+[node name="enemy59" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -5.88881, 2, -1231.75 )
+
+[node name="enemy60" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 3.11119, 2, -1231.75 )
+
+[node name="enemy61" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -14.8888, 2, -1245.73 )
+
+[node name="enemy62" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 7.81513, 2, -1270.87 )
+
+[node name="enemy63" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -15.0853, 2, -1330.32 )
+
+[node name="enemy64" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 0.629366, 2, -1313.32 )
+
+[node name="enemy65" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 14.5168, 2, -1336.52 )
+
+[node name="enemy66" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 1.05565, 2, -1340.6 )
+
+[node name="enemy67" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 7.44966, 2, -1357.23 )
+
+[node name="enemy68" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -3.4342, 2, -1390.65 )
+
+[node name="enemy69" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 2.47547, 2, -1409.72 )
+
+[node name="enemy70" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -10.5068, 2, -1436.03 )
+
+[node name="enemy71" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 10.3756, 2, -1457.91 )
+
+[node name="enemy72" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -11.004, 2, -1469.84 )
+
+[node name="enemy73" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 11.37, 2, -1492.21 )
+
+[node name="enemy74" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -4.5404, 2, -1504.64 )
+
+[node name="enemy75" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 2.91763, 2, -1532.49 )
+
+[node name="enemy76" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -14.7163, 2, -1376.41 )
+
+[node name="enemy77" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, 16.4497, 2, -1282.2 )
+
+[node name="enemy78" parent="obstacles" instance=ExtResource( 3 )]
+transform = Transform( -4.07302e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -4.07302e-07, -1.55034, 2, -1281.2 )
+
+[node name="lighting " type="Spatial" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="lighting "]
+environment = ExtResource( 8 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="lighting "]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 166, -244 )
+light_energy = 4.94
+light_indirect_energy = 8.05
+
+[node name="UserInterface" type="Spatial" parent="."]
+
+[node name="LevelComplete" parent="UserInterface" instance=ExtResource( 6 )]
+
+[node name="HUDofthescene" parent="UserInterface" instance=ExtResource( 9 )]
+
+[node name="gameplayColliders" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11.684 )
+script = ExtResource( 7 )
+
+[node name="speed1" type="Area" parent="gameplayColliders"]
+transform = Transform( 20, 0, 0, 0, 12.418, 0, 0, 0, 1, 0, 4.58002, -264.63 )
+
+[node name="CollisionShape" type="CollisionShape" parent="gameplayColliders/speed1"]
+shape = SubResource( 5 )
+
+[node name="speed2" type="Area" parent="gameplayColliders"]
+transform = Transform( 20, 0, 0, 0, 12.418, 0, 0, 0, 1, 0, 4.58002, -1156.69 )
+
+[node name="CollisionShape" type="CollisionShape" parent="gameplayColliders/speed2"]
+shape = SubResource( 5 )
+
+[node name="finishLine" type="Area" parent="gameplayColliders"]
+transform = Transform( 20, 0, 0, 0, 12.418, 0, 0, 0, 1, 0, 4.58002, -1678.3 )
+
+[node name="CollisionShape" type="CollisionShape" parent="gameplayColliders/finishLine"]
+shape = SubResource( 5 )
+
+[node name="Collectables" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
+
+[node name="coin" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.20955, 0, -65.6671 )
+
+[node name="coin2" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.340666, 0, -172.08 )
+
+[node name="coin3" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9736, 0, -228.191 )
+
+[node name="coin4" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.6807, 0, -257.934 )
+
+[node name="coin5" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3736, 0, -323.335 )
+
+[node name="coin6" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.25747, 0, -376.72 )
+
+[node name="coin7" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.652, 0, -522.122 )
+
+[node name="coin8" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.0306, 0, -568.14 )
+
+[node name="coin9" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.86144, 0, -721.497 )
+
+[node name="coin10" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9049, 0, -791.645 )
+
+[node name="coin11" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.6743, 0, -897.256 )
+
+[node name="coin12" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.546356, 0, -999.954 )
+
+[node name="coin13" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.8273, 0, -1096.79 )
+
+[node name="coin14" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1151, 0, -1182.85 )
+
+[node name="coin15" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.44011, 0, -1264.2 )
+
+[node name="coin16" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8789, 0, -1360.97 )
+
+[node name="coin17" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8624, 0, -1405.5 )
+
+[node name="coin18" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90588, 0, -1525.12 )
+
+[node name="coin19" parent="Collectables" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90588, 0, -1675.09 )
+
+[node name="ScoreSystem" type="Spatial" parent="."]
+script = ExtResource( 10 )
+
+[node name="Sounds" type="Spatial" parent="."]
+
+[node name="SceneMusicSource" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource( 11 )
+volume_db = 3.0
+autoplay = true
+[connection signal="body_entered" from="floor/sidewaysColliders/leftArea" to="floor/sidewaysColliders" method="areaEntered"]
+[connection signal="body_entered" from="floor/sidewaysColliders/Area2" to="floor/sidewaysColliders" method="areaEntered"]
+[connection signal="body_entered" from="gameplayColliders/speed1" to="gameplayColliders" method="speed1Entered"]
+[connection signal="body_entered" from="gameplayColliders/speed2" to="gameplayColliders" method="speed2Entered"]
+[connection signal="body_entered" from="gameplayColliders/finishLine" to="gameplayColliders" method="finishLineEntered"]

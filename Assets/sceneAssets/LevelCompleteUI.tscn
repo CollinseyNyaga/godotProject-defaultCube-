@@ -1,0 +1,61 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/fonts/Flipside.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/fonts/Sematary.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://scripts/LevelCompleteUI.cs" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 41
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 2 )
+
+[node name="LevelComplete" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_left = 0.2
+anchor_top = 0.2
+anchor_right = 0.8
+anchor_bottom = 0.8
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.960784, 0.960784, 0.960784, 0.556863 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="VBoxContainer" parent="ColorRect"]
+anchor_left = 0.1
+anchor_top = 0.2
+anchor_right = 0.9
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ColorRect/CenterContainer"]
+margin_right = 491.0
+margin_bottom = 42.0
+custom_fonts/font = SubResource( 1 )
+text = "Level Complete brooo"
+
+[node name="retryLevel" type="Button" parent="ColorRect/CenterContainer"]
+margin_top = 46.0
+margin_right = 491.0
+margin_bottom = 75.0
+custom_fonts/font = SubResource( 2 )
+text = "Retry"
+
+[node name="NextLevel" type="Button" parent="ColorRect/CenterContainer"]
+margin_top = 79.0
+margin_right = 491.0
+margin_bottom = 108.0
+custom_fonts/font = SubResource( 2 )
+text = "Next Level"

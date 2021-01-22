@@ -1,0 +1,8 @@
+C:\Users\monsi\Documents\GodotProjectFiles\cubemanProto\.mono\temp\bin\Debug\cubemanProto.dll
+C:\Users\monsi\Documents\GodotProjectFiles\cubemanProto\.mono\temp\bin\Debug\cubemanProto.pdb
+C:\Users\monsi\Documents\GodotProjectFiles\cubemanProto\.mono\temp\obj\Debug\cubemanProto.csprojAssemblyReference.cache
+C:\Users\monsi\Documents\GodotProjectFiles\cubemanProto\.mono\temp\obj\Debug\cubemanProto.AssemblyInfoInputs.cache
+C:\Users\monsi\Documents\GodotProjectFiles\cubemanProto\.mono\temp\obj\Debug\cubemanProto.AssemblyInfo.cs
+C:\Users\monsi\Documents\GodotProjectFiles\cubemanProto\.mono\temp\obj\Debug\cubemanProto.csproj.CoreCompileInputs.cache
+C:\Users\monsi\Documents\GodotProjectFiles\cubemanProto\.mono\temp\obj\Debug\cubemanProto.dll
+C:\Users\monsi\Documents\GodotProjectFiles\cubemanProto\.mono\temp\obj\Debug\cubemanProto.pdb

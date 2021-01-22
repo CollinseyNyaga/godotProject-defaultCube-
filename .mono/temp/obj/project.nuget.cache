@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "KedL5Wo4QalkTXLIHU4IwKeSqOHchW7bRDwhTR6RvWhtcT7NKk20iUcLf0qdmbaxP1Iu+ZEzCw1lsYnZQEgh3g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\monsi\\Documents\\GodotProjectFiles\\cubemanProto\\cubemanProto.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\monsi\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\monsi\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.0\\microsoft.netframework.referenceassemblies.net472.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
